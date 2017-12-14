@@ -4,6 +4,6 @@ words = s.split(' ').each {|w|
 	w.gsub!(/[,.]/, '')
 }
 arr = words.map {|w|
-    w.length
+	w.length
 }
 print(arr)
