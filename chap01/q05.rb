@@ -2,7 +2,7 @@
 def word_ngram(s, n)
     words = s.split(' ')
     hash = {}
-hash.default = 0
+    hash.default = 0
     for i in 0..words.length-n do
         ngram = []
         for j in 0..n-1 do
