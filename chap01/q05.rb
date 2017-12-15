@@ -22,7 +22,7 @@ def char_ngram(s, n)
         for j in 0..n-1 do
             ngram.push(chars[i+j])
         end
-        hash[ngram.join(' ')] += 1
+        hash[ngram.join('')] += 1
     end
     return hash
 end
