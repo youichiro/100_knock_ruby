@@ -27,9 +27,12 @@ def char_ngram(s, n)
     return hash
 end
 
-s = 'I am an NLPer'
-ngrams = word_ngram(s, 2)
-puts ngrams
 
-ngrams = char_ngram(s, 2)
-puts ngrams
+if __FILE__ == $0
+    s = 'I am an NLPer'
+    ngrams = word_ngram(s, 2)
+    puts ngrams
+
+    ngrams = char_ngram(s, 2)
+    puts ngrams
+end
