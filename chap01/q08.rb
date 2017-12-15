@@ -29,10 +29,12 @@ def cipher(s, mode)
     return str.join
 end
 
-s = "ABCabcABCabc"
-res = cipher(s, "encode")
-puts res
+if __FILE__ == $0
+    s = "ABCabcABCabc"
+    res = cipher(s, "encode")
+    puts res
 
-s = "ABC122121120ABC122121120"
-res = cipher(s, "decode")
-puts res
+    s = "ABC122121120ABC122121120"
+    res = cipher(s, "decode")
+    puts res
+end
